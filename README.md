@@ -125,7 +125,7 @@ initiad status 2>&1 | jq .sync_info
 ![image](https://github.com/mcyucel/Initia-Node/assets/106594298/dd263833-a924-4a67-8cd5-20ac6f78253d)
 
 
-latest_block_height https://scan.testnet.initia.xyz/initiation-1 adresindekine varınca false çıktısı verecektir. Ara ara kontrol edeceğiz. Uzun süreceği için terminali kapatıp birkaç saatte bir kontrol edebilirsiniz. Zaten işlemleri anasayfada yaptık. Çıkıp girdiğinizde son kod ile false çıktısı verene kadar kontrol edin. Sonrasında buradan devam edebilirsiniz.
+latest_block_height https://scan.testnet.initia.xyz/initiation-1 adresindekine varınca false çıktısı verecektir. Ara ara kontrol edeceğiz. Uzun süreceği için terminali kapatıp birkaç saatte bir kontrol edebilirsiniz. Zaten işlemleri anasayfada yaptık. Çıkıp girdiğinizde son kod ile false çıktısı verene kadar kontrol edin. Snapshot düzgün çalışmıyor. Beklemekten başka çare yok gibi. Sonrasında buradan devam edebilirsiniz.
 
 False olduktan sonra cüzdan oluşturacağız. Bir keplr cüzdanınız varsa import etmek için aşağıdaki kodu girdikten sonra 12 veya 24 kelimeli seed'leri gireceksiniz
 
