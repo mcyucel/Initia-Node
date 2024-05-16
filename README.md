@@ -116,6 +116,27 @@ sudo systemctl start initiad
 sudo journalctl -u initiad -f -o cat
 ```
 
+**Snapshot Alalım** (Bizi belirli bir bloktan başlatacak ve false çıktısı almak için daha az bekleyeceğiz.)
+
+Servisi durduruyoruz
+```
+sudo systemctl stop initia.service
+cp $HOME/.initia/data/priv_validator_state.json $HOME/.initia/priv_validator_state.json.backup
+rm -rf $HOME/.initia/data
+```
+
+Snapshotı indiriyoruz
+```
+curl -L https://snapshots.kjnodes.com/initia-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.initia
+mv $HOME/.initia/priv_validator_state.json.backup $HOME/.initia/data/priv_validator_state.json
+```
+
+Servisi tekrar başlatıyoruz
+```
+sudo systemctl start initia.service && sudo journalctl -u initia.service -f --no-hostname -o cat
+```
+
+
 Loglar akmaya başladığında CTRL+C yapıp çıkıyoruz ve aşağıdaki kodla peerların eşleşip eşleşmediğini kontrol ediyoruz. Eşleştiyse false çıktısı almamız lazım.
 
 ```
