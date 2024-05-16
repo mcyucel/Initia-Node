@@ -147,7 +147,11 @@ Servisi tekrar başlatıyoruz
 sudo systemctl start initiad.service && sudo journalctl -u initiad.service -f --no-hostname -o cat
 ```
 
+Loglar akmaya başlayınca CTRL+C yapıp tekrar alttaki komutla ara ara kontrol edelim. Yaklaşık yarım saatte peer eşleşecek ve false çıktısı alacaksınız.
 
+```
+initiad status 2>&1 | jq .sync_info
+```
 
 latest_block_height https://scan.testnet.initia.xyz/initiation-1 adresindekine varınca false çıktısı verecektir. Ara ara kontrol edeceğiz. Uzun süreceği için terminali kapatıp birkaç saatte bir kontrol edebilirsiniz. Zaten işlemleri anasayfada yaptık. Çıkıp girdiğinizde son kod ile false çıktısı verene kadar kontrol edin. Snapshot düzgün çalışmıyor. Beklemekten başka çare yok gibi. Sonrasında buradan devam edebilirsiniz.
 
