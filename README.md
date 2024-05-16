@@ -186,3 +186,13 @@ initiad tx mstaking create-validator \
 ```
 
 WinSCP veya benzeri bir program ile sunucunuza bağlanıp priv_validator_key.json dosyasını bilgisayarınıza kaydetmeniz yararınıza olur.
+
+
+
+**İŞİNİZE YARAYABİLECEK KODLAR**
+
+**Node'u Yeniden Başlatma** (Loglar aktıktan sonra hata alırsanız kullanabilirsiniz)
+
+```
+sudo systemctl restart initiad && journalctl -u initiad -f -o cat
+```
