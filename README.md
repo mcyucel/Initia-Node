@@ -1,5 +1,8 @@
 # Initia-Node
 
+Sistem Gereksinimleri: 4 CPU 8 RAM 1 TB SSD
+
+
 **Sistemi Güncelleyelim**
 
 ```
