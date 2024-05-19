@@ -2,6 +2,8 @@
 
 Sistem Gereksinimleri: 4 CPU 8 RAM 1 TB SSD
 
+**HETZNER 10€ Hediyeli Link: ** https://hetzner.cloud/?ref=pRFkXFvi9sON
+
 
 **Sistemi Güncelleyelim**
 
